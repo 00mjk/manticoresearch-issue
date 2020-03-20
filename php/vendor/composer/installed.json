@@ -1,0 +1,108 @@
+[
+    {
+        "name": "manticoresoftware/manticoresearch-php",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/manticoresoftware/manticoresearch-php.git",
+            "reference": "f36f698c79a265c7d981ef51eb6a69e92b37e4f3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/manticoresoftware/manticoresearch-php/zipball/f36f698c79a265c7d981ef51eb6a69e92b37e4f3",
+            "reference": "f36f698c79a265c7d981ef51eb6a69e92b37e4f3",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "^1.4",
+            "php": "^7.0",
+            "psr/log": "^1.1"
+        },
+        "require-dev": {
+            "mockery/mockery": "*",
+            "phpunit/phpunit": "*"
+        },
+        "suggest": {
+            "ext-curl": "*",
+            "guzzlehttp/psr7": "^1.6",
+            "monolog/monolog": "*",
+            "php-http/curl-client": "^1.7",
+            "php-http/httplug": "^1.1",
+            "php-http/message": "^1.7"
+        },
+        "time": "2020-03-16T09:56:26+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Manticoresearch\\": "src/Manticoresearch/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Adrian Nuta",
+                "email": "adriannuta@gmail.com"
+            }
+        ],
+        "description": "PHP Client for Manticore Search",
+        "keywords": [
+            "client",
+            "manticoresearch",
+            "search"
+        ]
+    },
+    {
+        "name": "psr/log",
+        "version": "1.1.2",
+        "version_normalized": "1.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
+            "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2019-11-01T11:05:21+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    }
+]
