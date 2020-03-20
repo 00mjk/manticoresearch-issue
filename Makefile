@@ -1,21 +1,21 @@
 #---* Makefile *---#
 .SILENT :
 
-export GO111MODULE=on
+# export GO111MODULE=on
 
 ## manticore-start		:	start local manticore searchd with qorpress config.
 manticore-start:
-	@searchd --config ./shared/config/manticore.conf
+	@searchd --config ./config/manticore.conf
 .PHONY: manticore-start
 
 ## manticore-stop			:	stop local manticore searchd.
 manticore-stop:
-	@searchd --stop --config ./shared/config/manticore.conf
+	@searchd --stop --config ./config/manticore.conf
 .PHONY: manticore-stop
 
 ## manticore-index			:	stop local manticore searchd.
 manticore-index:
-	@indexer --config ./shared/config/manticore.conf --all
+	@indexer --config ./config/manticore.conf --all
 .PHONY: manticore-index
 
 ## help				:	Print commands help.
