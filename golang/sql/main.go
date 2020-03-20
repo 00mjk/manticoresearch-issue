@@ -13,6 +13,9 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+
+
 	res, err := cl.Exec(query)
 	fmt.Println(res, err)
 }

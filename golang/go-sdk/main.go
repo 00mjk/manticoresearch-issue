@@ -5,6 +5,7 @@ import (
 	"os"
 	"fmt"
 
+	"github.com/k0kubun/pp"
 	log "github.com/sirupsen/logrus"
 	"github.com/manticoresoftware/go-sdk/manticore"
 	"github.com/spf13/pflag"
@@ -69,8 +70,13 @@ func main() {
 	if isSearch {
 		fmt.Println("query: ", query)
 		fmt.Println("indexName: ", indexName)
-		res2, err2 := cl.Query(query, indexName)
-		fmt.Println(res2, err2)
+		q := manticore.NewSearch(query, indexName, "test luc")
+		pp.Println(q)
+		res, err := cl.RunQuery(q)
+		if err != nil {
+			panic(err)
+		}
+		pp.Println(res)
 	}
 }
 
